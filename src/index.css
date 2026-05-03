@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-surface: #ffffff;
+  --color-background: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+}
+
+:root {
+  --line: #e2e8f0;
+}
+
+body {
+  @apply bg-background text-text-main font-sans antialiased;
+}
+
+.dashboard-card {
+  @apply bg-surface border border-border rounded-xl shadow-sm overflow-hidden;
+}
+
+.data-grid-header {
+  @apply text-[11px] font-semibold text-text-muted uppercase tracking-wider py-3 px-4 border-b border-border bg-slate-50/50;
+}
+
+.data-row {
+  @apply border-b border-border transition-colors hover:bg-indigo-50/50 cursor-default px-4 py-3;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-2.5 rounded-lg font-semibold transition-all hover:bg-primary-hover active:scale-95 shadow-sm shadow-indigo-100;
+}
+
+.btn-secondary {
+  @apply bg-white border border-border text-text-main px-6 py-2.5 rounded-lg font-semibold hover:bg-slate-50 transition-all active:scale-95;
+}
+
+.planner-item-active {
+  @apply p-4 bg-indigo-50 border-l-4 border-primary rounded-r-lg rounded-l-none;
+}
+
+.planner-item-muted {
+  @apply p-4 bg-slate-50 border-l-4 border-slate-300 rounded-r-lg rounded-l-none;
+}

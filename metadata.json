@@ -1,0 +1,6 @@
+{
+  "name": "ExamPilot: AI Past Paper Analyzer",
+  "description": "An AI-powered system that analyzes past papers and syllabus trends to map topic frequency, rank high-yield concepts, and generate smart study planners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Analysis", "PDF Processing", "Data Visualization"]
+}
